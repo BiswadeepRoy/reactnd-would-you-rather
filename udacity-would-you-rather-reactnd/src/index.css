@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form {
+  border: 3px solid #2471a3;
+  border-top: 40px solid #2471a3;
+  width: 50vw;
+  height: 50vh;
+  top: 25%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -25%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.user-select {
+  font-size: 1.1em;
+}
+
+select {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+  background-color: #2471a3;
+  border: 2px solid #2471a3;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+.title {
+  font-size: 1.5em;
+  color: #2471a3;
+}
+
+.dashboard-content {
+  border: 3px solid #2471a3;
+  border-top: 40px solid #2471a3;
+  width: 30vw;
+  min-height: 50vh;
+  top: 15%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -15%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-switcher {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  width: 50%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.tab.active {
+  background-color: white;
+  color: #2471a3;
+}
+
+.question-list {
+  min-height: 40vh;
+  bottom: 40px;
+  width: 100%;
+}
+
+.leader-list {
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+.question-cards,
+.leader-cards {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.leader-cards {
+  min-height: 20%;
+  width: 100%;
+}
+
+.question-card,
+.question-card-view {
+  background-color: #edf7fd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 2.5%;
+  font-size: 0.75em;
+}
+
+.question-card-view {
+  width: 50%;
+  height: 50%;
+  font-size: 1.2em;
+}
+
+.avatar-card {
+  width: 30%;
+  background-color: #2471a3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.teaser-poll {
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+}
+.poll {
+  padding: 3px 5px;
+  font-size: 0.75em;
+}
+
+.view-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #2471a3;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.optionOne,
+.optionTwo {
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+.load {
+  border-radius: 5px;
+  border: 1px solid #2471a3;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.water {
+  background-color: #2471a3;
+}
+
+.option-input {
+  left: 5%;
+  right: 5%;
+  padding: 2%;
+  width: 30%;
+}
+
+.option-input:focus {
+  outline: none;
+}
+
+.option-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav{
+  text-decoration: none;
+  padding: 20px;
+  top: 10px;
+  color: rgb(100, 100, 100);
+}
+
+.nav:hover:focus{
+  color: inherit;
+}
+
+.active-nav{
+  color:black;
+  font-weight: 500;
+}
+
+.nav-bar{
+  height: 30px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-left{
+  width:70%;
+}
+
+.nav-right{
+  width:30%;
+}
